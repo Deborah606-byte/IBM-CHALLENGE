@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -75,7 +76,7 @@
               </div>
             </div>
             
-            <a href="#" class="bg-green-600 px-4 py-2 rounded hover:text-black hover:bg-white transition text-sm uppercase">Connect</a>
+            <a href="./connect.html" class="bg-green-600 px-4 py-2 rounded hover:text-black hover:bg-white transition text-sm uppercase">Connect</a>
           </nav>
 
           <!-- Hamburger Menu Goes Here -->
@@ -130,7 +131,7 @@
               </a>
             </div>
           </div>
-          <a href="#" class="bg-white py-2 text-center text-black border-gray-200 w-full hover:text-white hover:bg-green-600 rounded shadow transition-all font-medium">Connect</a>
+          <a href="./connect.html" class="bg-white py-2 text-center text-black border-gray-200 w-full hover:text-white hover:bg-green-600 rounded shadow transition-all font-medium">Connect</a>
         </nav>
     </header>
     <!-- Header Ends Here  -->
@@ -147,7 +148,7 @@
               <div class="bg-[rgba(0,0,0,0.6)] absolute w-screen inset-0"></div>
 
               <!-- Content -->
-              <div class="absolute left-0 top-0 px-10 py-20 md:py-10 md:px-20 text-white flex flex-col items-start space-y-4 md:space-y-8 mt-20 md:mt-16 lg:w-[65%]">
+              <div data-aos="fade-right" class="absolute left-0 top-0 px-10 py-20 md:py-10 md:px-20 text-white flex flex-col items-start space-y-4 md:space-y-8 mt-20 md:mt-16 lg:w-[65%]">
 
                   <h2 class="uppercase font-bold text-4xl md:text-5xl border-l-4 md:border-l-8 pl-2 border-green-600 leading-[1.3]">Solutions</h2>
 
@@ -168,21 +169,22 @@
 
               <!-- The Header -->
               <h2 class="relative text-center flex flex-col items-center uppercase">
-                <span class="text-4xl font-bold font-[georgia] absolute -top-5 text-slate-300 z-[-10] drop-shadow-2xl">Teco-Farms</span>
-                <span class="font-medium text-3xl z-10 drop-shadow-2xl shadow-2xl">Solutions</span>
+                <span data-aos="zoom-out" class="text-4xl font-bold font-[georgia] absolute -top-5 text-slate-300 z-[-10] drop-shadow-2xl">Teco-Farms</span>
+                <span data-aos="zoom-out" class="font-medium text-3xl z-10 drop-shadow-2xl shadow-2xl">Solutions</span>
               </h2>
 
               <!-- Actual Solution -->
 
-              <!-- Swiper -->
+              <!-- Solutions Swiper -->
               <div class="swiper mySwiper mt-10">
                 <div class="swiper-wrapper">
 
+                  <!-- Diagnosing weather patterns -->
                   <div class="swiper-slide" id="diagnosing-weather-patterns">
                     <div class="relative grid grid-cols-1 md:grid-cols-2 md:gap-x-4 place-contents-start place-items-start">
-                      <img src="./assets/agro.webp" alt="solution to agricultural problems" class="w-full object-contain">
+                      <img data-aos="fade-right" src="./assets/agro.webp" alt="solution to agricultural problems" class="w-full object-contain">
     
-                      <div class="bg-gray-800 text-left px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full">
+                      <div data-aos="fade-left" class="bg-gray-800 text-left px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full">
 
                         <div class="flex items-center justify-center space-x-4">
                           <i class="bi bi-star-fill text-4xl text-orange-600"></i>
@@ -202,11 +204,12 @@
                     </div>
                   </div>
 
+                  <!-- Testing Of Soil -->
                   <div class="swiper-slide" id="testing-of-soil">
                     <div class="w-full relative grid grid-cols-1 md:grid-cols-2 md:gap-x-4 place-contents-start place-items-start">
-                      <img src="./assets/drone.jpg" alt="solution to agricultural problems">
+                      <img data-aos="fade-right" src="./assets/drone.jpg" alt="solution to agricultural problems">
     
-                      <div class="bg-gray-800 text-left px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full">
+                      <div data-aos="fade-left" class="bg-gray-800 text-left px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full">
     
                         <div class="flex items-center justify-center space-x-4">
                           <i class="bi bi-star-fill text-4xl text-orange-600"></i>
@@ -232,11 +235,12 @@
                     </div>
                   </div>
 
+                  <!-- Crop Or Seed Planting -->
                   <div class="swiper-slide" id="crop-planting">
                     <div class="w-full relative grid grid-cols-1 md:grid-cols-2 md:gap-x-4 place-contents-start place-items-start">
-                      <img src="./assets/gh-farmers.jpg" alt="solution to agricultural problems">
+                      <img data-aos="fade-right" src="./assets/gh-farmers.jpg" alt="solution to agricultural problems">
     
-                      <div class="bg-gray-800 text-left px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full">
+                      <div data-aos="fade-left" class="bg-gray-800 text-left px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full">
     
                         <div class="flex items-center justify-center space-x-4">
                           <i class="bi bi-star-fill text-4xl text-orange-600"></i>
@@ -256,11 +260,12 @@
                     </div>
                   </div>
 
+                  <!-- Irrigation & Fertilizer Application Purposes -->
                   <div class="swiper-slide" id="irrigation">
                     <div class="w-full relative grid grid-cols-1 md:grid-cols-2 md:gap-x-4 place-contents-start place-items-start">
-                      <img src="./assets/irri.jpg" alt="solution to agricultural problems">
+                      <img data-aos="fade-right" src="./assets/irri.jpg" alt="solution to agricultural problems">
     
-                      <div class="bg-gray-800 text-left px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full">
+                      <div data-aos="fade-left" class="bg-gray-800 text-left px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full">
     
                         <div class="flex items-center justify-center space-x-4">
                           <i class="bi bi-star-fill text-4xl text-orange-600"></i>
@@ -297,11 +302,12 @@
                     </div>
                   </div>
 
+                  <!-- Monitoring Crops Or Health Assessment -->
                   <div class="swiper-slide" id="crop-health-assessment">
                     <div class="w-full relative grid grid-cols-1 md:grid-cols-2 md:gap-x-4 place-contents-start place-items-start">
-                      <img src="./assets/drone.jpg" alt="solution to agricultural problems">
+                      <img data-aos="fade-right" src="./assets/drone.jpg" alt="solution to agricultural problems">
     
-                      <div class="bg-gray-800 text-left px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full">
+                      <div data-aos="fade-left" class="bg-gray-800 text-left px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full">
     
                         <div class="flex items-center justify-center space-x-4">
                           <i class="bi bi-star-fill text-4xl text-orange-600"></i>
@@ -325,11 +331,12 @@
                     </div>
                   </div>
 
+                  <!-- Harvesting -->
                   <div class="swiper-slide" id="harvesting">
                     <div class="w-full relative grid grid-cols-1 md:grid-cols-2 md:gap-x-4 place-contents-start place-items-start">
-                      <img src="./assets/agro.webp" alt="solution to agricultural problems">
+                      <img data-aos="fade-right" src="./assets/agro.webp" alt="solution to agricultural problems">
     
-                      <div class="bg-gray-800 text-left px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full">
+                      <div data-aos="fade-left" class="bg-gray-800 text-left px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full">
     
                         <div class="flex items-center justify-center space-x-4">
                           <i class="bi bi-star-fill text-4xl text-orange-600"></i>
@@ -371,7 +378,12 @@
     </footer>
     <!-- Footer Ends Here -->
 
+    
     <!-- Scripts go here -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
      <!-- Swiper JS -->
      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
