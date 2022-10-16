@@ -593,11 +593,6 @@ video {
   margin-bottom: 4rem;
 }
 
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
 .mb-auto {
   margin-bottom: auto;
 }
@@ -630,12 +625,12 @@ video {
   margin-bottom: 10rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .flex {
@@ -670,64 +665,16 @@ video {
   height: 14rem;
 }
 
-.h-\[\] {
-  height: ;
-}
-
-.h-\[200\] {
-  height: 200;
-}
-
-.h-\[300vh\] {
-  height: 300vh;
-}
-
-.h-\[280vh\] {
-  height: 280vh;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
-}
-
-.h-\[vh\] {
-  height: vh;
-}
-
-.h-\[80vh\] {
-  height: 80vh;
-}
-
-.h-\[120vh\] {
-  height: 120vh;
-}
-
-.h-\[1\] {
-  height: 1;
-}
-
-.h-\[159\] {
-  height: 159;
-}
-
 .h-\[150vh\] {
   height: 150vh;
 }
 
-.max-h-\[\] {
-  max-height: ;
+.h-\[65vh\] {
+  height: 65vh;
 }
 
-.max-h-\[100vh\] {
-  max-height: 100vh;
-}
-
-.max-h-\[300vh\] {
-  max-height: 300vh;
-}
-
-.max-h-\[200vh\] {
-  max-height: 200vh;
+.h-\[120vh\] {
+  height: 120vh;
 }
 
 .min-h-screen {
@@ -754,48 +701,8 @@ video {
   width: 100vw;
 }
 
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-\[60\%\] {
-  width: 60%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[500vw\] {
-  width: 500vw;
-}
-
-.w-\[200vw\] {
-  width: 200vw;
-}
-
-.max-w-\[\] {
-  max-width: ;
-}
-
-.max-w-\[1\] {
-  max-width: 1;
-}
-
-.max-w-\[12\] {
-  max-width: 12;
-}
-
-.max-w-\[1200px\] {
-  max-width: 1200px;
-}
-
-.max-w-screen-md {
-  max-width: 768px;
-}
-
-.max-w-screen-lg {
-  max-width: 1024px;
+.w-1 {
+  width: 0.25rem;
 }
 
 .flex-shrink-0 {
@@ -940,12 +847,6 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-x-hidden {
@@ -1180,6 +1081,10 @@ video {
 
 .pr-1 {
   padding-right: 0.25rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1562,6 +1467,10 @@ video {
     margin-top: 4rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1588,16 +1497,6 @@ video {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:gap-x-10 {
-    -moz-column-gap: 2.5rem;
-         column-gap: 2.5rem;
-  }
-
-  .md\:gap-x-5 {
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
   }
 
   .md\:gap-x-4 {
