@@ -4,41 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/IMAGES/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
     <title>Teco-Farms - Welcome to Teco-Farms</title>
     <link rel="stylesheet" href="./output.css">
 </head>
+
+
 <body class="overflow-x-hidden flex flex-col min-h-screen font-[poppins]">
 
-  <!-- Header starts here -->
+    <!-- Header starts here -->
     <header class="bg-gray-700 w-screen py-2 px-6 shadow-xl fixed z-50 fixed">
         <div class="flex justify-between items-center">
+          
           <!-- Logo goes here -->
           <a href="./index.html" class="flex items-center space-x-2 md:pl-6">
-            <img src="../IMAGES/logo.png" alt="teco farms logo" class="w-10 h-10 rounded">
+            <img src="./assets/logo.png" alt="teco farms logo" class="w-10 h-10 rounded">
             <span class="text-white text-xl font-medium italic">Teco-Farms</span>
           </a> 
 
           <!-- Desktop Nav goes here -->
           <nav class="hidden md:flex justify-center items-center space-x-6 text-white pr-6">
             <a href="./index.html" class="font-medium text-green-400 hover:text-green-400 uppercase">Home</a>
-            <a href="./about.html" class="hover:text-green-400 uppercase">About</a>
+            <a href="./index.html#about-teco-farms" class="hover:text-green-400 uppercase">About</a>
 
             <div class="group relative">
-              <div class=" flex items-center space-x-1 group-hover:cursor-pointer group-hover:text-green-400 uppercase">
+              <a href="./solutions.html" class=" flex items-center space-x-1 group-hover:cursor-pointer group-hover:text-green-400 uppercase">
                 <span>Solutions</span>
                 <i class="bi bi-caret-down-fill text-xl group-hover:hidden"></i>
                 <i class="bi bi-caret-up-fill text-xl hidden group-hover:block"></i>
-              </div>
+              </a>
+
               <!-- Solutions drop-down -->
               <div class="flex flex-col absolute top-10 translate-y-[-100rem] group-hover:translate-y-[0] -right-24 w-[30rem] bg-white text-gray-700 transition duration-1000 rounded shadow">
-                <a href="#" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">Diagnosing Weather Patterns</a>
-                <a href="#" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">Testing of Soil</a>
-                <a href="#" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">Crop or Seed Planting</a>
-                <a href="#" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">Irrigation, Fertilisers and Pesticides Application</a>
-                <a href="#" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">Monitoring Crops & Health Assessment</a>
-                <a href="#" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">Harvesting</a>
+
+                <a href="./solutions.html#diagnosing-weather-patterns" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                  Diagnosing Weather Patterns
+                </a>
+
+                <a href="./solutions.html#testing-of-soil" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                  Testing of Soil
+                </a>
+
+                <a href="./solutions.html#crop-planting" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                  Crop or Seed Planting
+                </a>
+
+                <a href="./solutions.html#irrigation" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                  Irrigation, Fertilisers and Pesticides Application
+                </a>
+
+                <a href="./solutions.html#crop-health-assessment" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                  Monitoring Crops & Health Assessment
+                </a>
+
+                <a href="./solutions.html#harvesting" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                  Harvesting
+                </a>
+
               </div>
             </div>
             
@@ -53,24 +76,42 @@
         <!-- Mobile Nav goes here -->
         <nav id="mobile-nav" class="absolute top-12 translate-y-[-100rem] left-0 pl-4 bg-gray-700 w-screen md:hidden flex flex-col items-start space-y-6 text-white uppercase py-6 pr-8 transition duration-1000 ease-in-out">
           <a href="./index.html" class="border-b-[1px] border-gray-200 w-full hover:text-green-500">Home</a>
-          <a href="./about.html" class="border-b-[1px] border-gray-200 w-full hover:text-green-500">About</a>
+          <a href="./index.html#about-teco-farms" class="border-b-[1px] border-gray-200 w-full hover:text-green-500">About</a>
 
           <div class="group relative w-full">
             <!-- Main Solution Content -->
-            <div class=" flex items-center space-x-1 group-hover:cursor-pointer group-hover:text-green-400 uppercase border-b-[1px] border-gray-200">
+            <a href="./solutions.html" class=" flex items-center space-x-1 group-hover:cursor-pointer group-hover:text-green-400 uppercase border-b-[1px] border-gray-200">
               <span>Solutions</span>
               <i class="bi bi-caret-down-fill text-xl group-hover:hidden"></i>
               <i class="bi bi-caret-up-fill text-xl hidden group-hover:block"></i>
-            </div>
+            </a>
 
             <!-- Solutions drop-down -->
             <div class="hidden flex-col absolute top-6 group-hover:flex w-full bg-white text-gray-700 transition-all duration-1000 rounded shadow">
-              <a href="#" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">Diagnosing Weather Patterns</a>
-              <a href="#" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">Testing of Soil</a>
-              <a href="#" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">Crop or Seed Planting</a>
-              <a href="#" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">Irrigation, Fertilisers and Pesticides Application</a>
-              <a href="#" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">Monitoring Crops & Health Assessment</a>
-              <a href="#" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">Harvesting</a>
+
+              <a href="./solutions.html#diagnosing-weather-patterns" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                Diagnosing Weather Patterns
+              </a>
+
+              <a href="./solutions.html#testing-of-soil" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                Testing of Soil
+              </a>
+
+              <a href="./solutions.html#crop-planting" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                Crop or Seed Planting
+              </a>
+
+              <a href="./solutions.html#irrigation" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                Irrigation, Fertilisers and Pesticides Application
+              </a>
+
+              <a href="./solutions.html#crop-health-assessment" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                Monitoring Crops & Health Assessment
+              </a>
+
+              <a href="./solutions.html#harvesting" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                Harvesting
+              </a>
             </div>
           </div>
           <a href="#" class="bg-white py-2 text-center text-black border-gray-200 w-full hover:text-white hover:bg-green-600 rounded shadow transition-all font-medium">Connect</a>
@@ -84,23 +125,22 @@
             <!-- Hero Section Starts Here -->
             <section class="relative">
               <!-- Hero Image Background -->
-              <img src="../IMAGES/farmer.jpeg" alt="ghana farmers" class="w-full h-[75vh] sm:h-[70vh] md:h-[100vh] object-cover">
+              <img src="./assets/farmer.jpeg" alt="ghana farmers" class="w-full h-[70vh] md:h-100vh] object-cover">
 
               <!-- Background Overlay -->
-              <div class="bg-[rgba(0,0,0,0.5)] absolute w-screen inset-0"></div>
+              <div class="bg-[rgba(0,0,0,0.7)] absolute w-screen inset-0"></div>
 
               <!-- Content -->
-              <div class="absolute left-0 top-0 px-10 py-20 md:py-10 md:px-20 text-white flex flex-col items-start space-y-4 md:space-y-8 md:mt-20 lg:w-[65%]">
+              <div class="absolute left-0 top-0 px-10 py-20 md:py-10 md:px-20 text-white flex flex-col items-start space-y-4 md:space-y-8 md:mt-16 lg:w-[65%]">
 
                   <h2 class="uppercase font-bold text-3xl md:text-4xl border-l-4 md:border-l-8 pl-2 border-green-600 leading-[1.5]">Teco-Farms <br> Grow More, Live More</h2>
 
                   <p class="font-light text-sm leading-[2.5] tracking-wide px-5 lg:text-base lg:leading-[2]">
-                    We are a team of students dedicated to make a change in the world we live in by coming up with suitable solutions for the
-                    issues we encounter
+                    We are a team of students dedicated to making a change in the world we live in by coming up with suitable solutions for the issues we encounter.
                   </p>
 
                 <button class="py-3 px-4 bg-green-600 hover:bg-green-700 transition rounded">
-                  <a href="#" class="text-sm uppercase">Discover More</a>
+                  <a href="#about-teco-farms" class="text-sm uppercase">Discover More</a>
                 </button>
               </div>
             </section>
@@ -168,11 +208,14 @@
             <!-- End of Benefits of Agriculture -->
             
             <!-- About Section -->
-            <section class="bg-white px-6 py-6 my-6">
-              <div class="flex flex-col space-y-4 lg:space-y-0 lg:space-x-4 lg:flex-row justify-between items-start">
+            <section class="bg-white px-6 py-6 my-6" id="about-teco-farms">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
 
-                <img src="../IMAGES/male.jpg" alt="about us image" class="rounded object-contain w-full lg:w-[50vw]">
-
+                <div class="mx-auto flex flex-col items-center"> 
+                  <img src="./assets/male.jpg" alt="about us image" class="rounded object-contain w-screen">
+                  <p class="py-2 font-medium">An Agriculturalist doing what he does best</p>
+                </div>
+                
                 <div class="flex flex-col space-y-1">
                   <h2 class="uppercase text-gray-400 font-medium">About Teco-Farms</h2>
                   <h4 class="text-3xl font-[600] text-orange-600 tracking-tight">Enhancing Our Traditional Methods</h4>
@@ -191,7 +234,7 @@
 
                   <div class="flex flex-col space-y-4 px-5">
 
-                    <div class="bg-white shadow-xl rounded-md py-4 px-3 flex items-center space-x-3">
+                    <div class="bg-white shadow-xl rounded-md py-8 px-5 flex items-center space-x-3">
                       <i class="bi bi-reception-4 text-5xl text-orange-600"></i>
                       <div>
                         <h3 class="font-medium text-lg">Enrich Lives</h3>
@@ -199,7 +242,7 @@
                       </div>
                     </div>
 
-                    <div class="bg-white shadow-xl rounded-md py-4 px-3 flex items-center space-x-3">
+                    <div class="bg-white shadow-xl rounded-md py-8 px-5 flex items-center space-x-3">
                       <i class="bi bi-bounding-box-circles text-5xl text-orange-600"></i>
                       <div>
                         <h3 class="font-medium text-lg">Connect Farmers</h3>
@@ -215,12 +258,10 @@
             <!-- End of About Section -->
 
             <!-- Why Choose Us Section -->
-
-            <!-- This will be a super cool place to leave a secret message since no one reads comment😂😂😂 -->
-            <section class="md:text-center py-8 px-8 mt-6 bg-slate-800 text-white flex flex-col lg:flex-row lg:justify-center lg:items-start lg:space-y-4 relative">
+            <section class="md:text-center py-8 px-8 mt-6 bg-slate-800 text-white grid grid-cols-1 lg:grid-cols-2 gap-4 relative">
               <!-- Image -->
               <div class="mx-auto">
-                <img src="/IMAGES/why-choose-us.webp" alt="why choose us" class="object-contain rounded">
+                <img src="./assets/why-choose-us.webp" alt="why choose us" class="object-contain rounded w-[100vw]">
               </div>
 
               <!-- Content Goes Here -->
@@ -254,40 +295,42 @@
               <!-- background overlay -->
               <div class="absolute w-full inset-0 bg-[rgba(0,0,0,0.4)]"></div>
 
-              <h2 class="text-center py-5 text-xl md:text-2xl uppercase font-bold">Technology Will <br> Used To</h2>
+              <h2 class="text-center py-5 text-xl md:text-2xl uppercase font-bold">Technology Will Be Used</h2>
 
               <div class="text-center grid grid-cols-1 md:grid-cols-3 gap-4 px-6">
 
                 <div class="bg-[rgba(0,0,0,0.9)] rounded-md w-full py-6">
                   <i class="bi bi-award text-orange-600 text-5xl"></i>
-                  <h4 class="text-center px-3 py-3 text-white text-lg uppercase">Diagnose weather patterns</h4>
-                </div>
-
-                <div class="bg-[rgba(0,0,0,0.9)] rounded-md w-full py-6">
-                  <i class="bi bi-award text-orange-600 text-5xl"></i>
-                  <h4 class="text-center px-3 py-3 text-white text-lg uppercase">Test soil
+                  <h4 class="text-center px-3 py-3 text-white text-lg uppercase">
+                    To Diagnose weather patterns
                   </h4>
                 </div>
 
                 <div class="bg-[rgba(0,0,0,0.9)] rounded-md w-full py-6">
                   <i class="bi bi-award text-orange-600 text-5xl"></i>
-                  <h4 class="text-center px-3 py-3 text-white text-lg uppercase">Help crop or seed planting</h4>
-                </div>
-
-                <div class="bg-[rgba(0,0,0,0.9)] rounded-md w-full py-6">
-                  <i class="bi bi-award text-orange-600 text-5xl"></i>
-                  <h4 class="text-center px-3 py-3 text-white text-lg uppercase"> Used for irrigation purposes and application of fertilisers and pesticides
+                  <h4 class="text-center px-3 py-3 text-white text-lg uppercase">To Test soil
                   </h4>
                 </div>
 
                 <div class="bg-[rgba(0,0,0,0.9)] rounded-md w-full py-6">
                   <i class="bi bi-award text-orange-600 text-5xl"></i>
-                  <h4 class="text-center px-3 py-3 text-white text-lg uppercase">Monitoring crops or health assessment</h4>
+                  <h4 class="text-center px-3 py-3 text-white text-lg uppercase">To Help Crop or Seed Planting</h4>
                 </div>
 
                 <div class="bg-[rgba(0,0,0,0.9)] rounded-md w-full py-6">
                   <i class="bi bi-award text-orange-600 text-5xl"></i>
-                  <h4 class="text-center px-3 py-3 text-white text-lg uppercase">Harvesting</h4>
+                  <h4 class="text-center px-3 py-3 text-white text-lg uppercase"> For Irrigation Purposes and Application Of Fertilisers And Pesticides
+                  </h4>
+                </div>
+
+                <div class="bg-[rgba(0,0,0,0.9)] rounded-md w-full py-6">
+                  <i class="bi bi-award text-orange-600 text-5xl"></i>
+                  <h4 class="text-center px-3 py-3 text-white text-lg uppercase">To Monitor crops or health assessment</h4>
+                </div>
+
+                <div class="bg-[rgba(0,0,0,0.9)] rounded-md w-full py-6">
+                  <i class="bi bi-award text-orange-600 text-5xl"></i>
+                  <h4 class="text-center px-3 py-3 text-white text-lg uppercase">For Harvesting</h4>
                 </div>
               </div>
             </section>
@@ -310,6 +353,7 @@
                         <h2 class="title-font font-medium text-lg text-gray-900">Alper Kamu</h2>
                         <h3 class="text-gray-500 mb-3">UI Developer</h3>
                         <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+
                         <span class="flex items-center justify-center space-x-3">
                           <a href="#" class="group">
                             <i class="group-hover:text-gray-800 text-xl bi bi-facebook"></i>
@@ -332,6 +376,7 @@
                         <h2 class="title-font font-medium text-lg text-gray-900">Holden Caulfield</h2>
                         <h3 class="text-gray-500 mb-3">UI Developer</h3>
                         <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+
                         <span class="flex items-center justify-center space-x-3">
                           <a href="#" class="group">
                             <i class="group-hover:text-gray-800 text-xl bi bi-facebook"></i>
@@ -354,6 +399,7 @@
                         <h2 class="title-font font-medium text-lg text-gray-900">Atticus Finch</h2>
                         <h3 class="text-gray-500 mb-3">UI Developer</h3>
                         <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+
                         <span class="flex items-center justify-center space-x-3">
                           <a href="#" class="group">
                             <i class="group-hover:text-gray-800 text-xl bi bi-facebook"></i>
@@ -377,6 +423,7 @@
                         <h3 class="text-gray-500 mb-3">UI Developer</h3>
                         <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
                       </div>
+
                       <span class="flex items-center justify-center space-x-3">
                         <a href="#" class="group">
                           <i class="group-hover:text-gray-800 text-xl bi bi-facebook"></i>
@@ -401,8 +448,13 @@
 
     <!-- Footer Starts Here -->
     <footer class="bg-gray-900 py-10 text-white text-center">
-        <p class="py-4 uppercase text-2xl">Made with <span class="animate-ping duration-1000">❤️</span> Teco-Farms</p>
-        <p class="py-3">Copyright &copy; <span id="date" class="pr-1"></span>Teco-Farms</p>
+        <p class="py-4 uppercase text-2xl">
+          Made with <span class="animate-ping duration-1000">❤️</span> Teco-Farms
+        </p>
+
+        <p class="py-3">
+          Copyright &copy; <span id="date" class="pr-1"></span>Teco-Farms
+        </p>
     </footer>
     <!-- Footer Ends Here -->
 

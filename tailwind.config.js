@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'farm': "url('/IMAGES/farm-field.jpg')"
+        'farm': "url('./assets/farm-field.jpg')",
+        'farmer': "url('./assets/farmer.jpeg')"
       }
     },
   },

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./output.css">
+    <title>Solutions - Teco-Farms</title>
+</head>
+
+
+<body class="overflow-x-hidden flex flex-col min-h-screen font-[poppins]">
+
+    <!-- Header starts here -->
+    <header class="bg-gray-700 w-screen py-2 px-6 shadow-xl fixed z-50 fixed">
+        <div class="flex justify-between items-center">
+          
+          <!-- Logo goes here -->
+          <a href="./index.html" class="flex items-center space-x-2 md:pl-6">
+            <img src="./assets/logo.png" alt="teco farms logo" class="w-10 h-10 rounded">
+            <span class="text-white text-xl font-medium italic">Teco-Farms</span>
+          </a> 
+
+          <!-- Desktop Nav goes here -->
+          <nav class="hidden md:flex justify-center items-center space-x-6 text-white pr-6">
+            <a href="./index.html" class="hover:text-green-400 uppercase">
+              Home
+            </a>
+            <a href="./index.html#about-teco-farms" class="hover:text-green-400 uppercase">
+              About
+            </a>
+
+            <div class="group relative">
+              <a href="./solutions.html" class="font-medium text-green-400 flex items-center space-x-1 group-hover:cursor-pointer group-hover:text-green-400 uppercase">
+                <span>Solutions</span>
+                <i class="bi bi-caret-down-fill text-xl group-hover:hidden"></i>
+                <i class="bi bi-caret-up-fill text-xl hidden group-hover:block"></i>
+              </a>
+
+              <!-- Solutions drop-down -->
+              <div class="flex flex-col absolute top-10 translate-y-[-100rem] group-hover:translate-y-[0] -right-24 w-[30rem] bg-white text-gray-700 transition duration-1000 rounded shadow">
+
+                <a href="./solutions.html#diagnosing-weather-patterns" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                  Diagnosing Weather Patterns
+                </a>
+
+                <a href="./solutions.html#testing-of-soil" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                  Testing of Soil
+                </a>
+
+                <a href="./solutions.html#crop-planting" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                  Crop or Seed Planting
+                </a>
+
+                <a href="./solutions.html#irrigation" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                  Irrigation, Fertilisers and Pesticides Application
+                </a>
+
+                <a href="./solutions.html#crop-health-assessment" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                  Monitoring Crops & Health Assessment
+                </a>
+
+                <a href="./solutions.html#harvesting" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                  Harvesting
+                </a>
+
+              </div>
+            </div>
+            
+            <a href="#" class="bg-green-600 px-4 py-2 rounded hover:text-black hover:bg-white transition text-sm uppercase">Connect</a>
+          </nav>
+
+          <!-- Hamburger Menu Goes Here -->
+            <i id="hamburger-menu" 
+              class="md:hidden cursor-pointer bi bi-list text-3xl text-white hover:text-green-600"></i>
+        </div>
+
+        <!-- Mobile Nav goes here -->
+        <nav id="mobile-nav" class="absolute top-12 translate-y-[-100rem] left-0 pl-4 bg-gray-700 w-screen md:hidden flex flex-col items-start space-y-6 text-white uppercase py-6 pr-8 transition duration-1000 ease-in-out">
+
+          <a href="./index.html" class="border-b-[1px] border-gray-200 w-full hover:text-green-500">
+            Home
+          </a>
+
+          <a href="./index.html#about-teco-farms" class="border-b-[1px] border-gray-200 w-full hover:text-green-500">
+            About
+          </a>
+
+          <div class="group relative w-full">
+            <!-- Main Solution Content -->
+            <a href="./solutions.html" class=" flex items-center space-x-1 group-hover:cursor-pointer group-hover:text-green-400 uppercase border-b-[1px] border-gray-200">
+              <span>Solutions</span>
+              <i class="bi bi-caret-down-fill text-xl group-hover:hidden"></i>
+              <i class="bi bi-caret-up-fill text-xl hidden group-hover:block"></i>
+            </a>
+
+            <!-- Solutions drop-down -->
+            <div class="hidden flex-col absolute top-6 group-hover:flex w-full bg-white text-gray-700 transition-all duration-1000 rounded shadow">
+
+              <a href="./solutions.html#diagnosing-weather-patterns" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                Diagnosing Weather Patterns
+              </a>
+
+              <a href="./solutions.html#testing-of-soil" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                Testing of Soil
+              </a>
+
+              <a href="./solutions.html#crop-planting" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                Crop or Seed Planting
+              </a>
+
+              <a href="./solutions.html#irrigation" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                Irrigation, Fertilisers and Pesticides Application
+              </a>
+
+              <a href="./solutions.html#crop-health-assessment" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                Monitoring Crops & Health Assessment
+              </a>
+
+              <a href="./solutions.html#harvesting" class="hover:bg-green-700 hover:text-white py-2 px-10 transition">
+                Harvesting
+              </a>
+            </div>
+          </div>
+          <a href="#" class="bg-white py-2 text-center text-black border-gray-200 w-full hover:text-white hover:bg-green-600 rounded shadow transition-all font-medium">Connect</a>
+        </nav>
+    </header>
+    <!-- Header Ends Here  -->
+
+    <!-- Main Content Starts Here -->
+        <main class="mb-auto mb-40">
+
+            <!-- Hero Section Starts Here -->
+            <section class="relative">
+              <!-- Hero Image Background -->
+              <img src="./assets/drone.jpg" alt="ghana farmers" class="w-full h-[70vh] md:h-100vh] object-cover">
+
+              <!-- Background Overlay -->
+              <div class="bg-[rgba(0,0,0,0.6)] absolute w-screen inset-0"></div>
+
+              <!-- Content -->
+              <div class="absolute left-0 top-0 px-10 py-20 md:py-10 md:px-20 text-white flex flex-col items-start space-y-4 md:space-y-8 md:mt-16 lg:w-[65%]">
+
+                  <h2 class="uppercase font-bold text-4xl md:text-5xl border-l-4 md:border-l-8 pl-2 border-green-600 leading-[1.3]">Solutions</h2>
+
+                  <p class="font-light text-sm md:text-lg leading-[2] tracking-wider px-5 lg:text-base lg:leading-[2] uppercase font-[600]">
+                    To Enhancing the traditional methods of farming
+                  </p>
+
+                  <a href="#solutions" class="text-sm uppercase flex flex-col space-y-2 items-center py-2 px-6 bg-green-600 hover:bg-green-700 transition rounded">
+                    <span>Scroll Down</span>
+                    <i class="bi bi-chevron-double-down text-base animate-bounce"></i>
+                  </a>
+              </div>
+            </section>
+            <!-- Hero Section Ends Here -->
+
+            <!-- Solutions Section -->
+            <section id="solutions" class="my-16 px-10 relative">
+
+              <!-- The Header -->
+              <h2 class="relative text-center flex flex-col items-center uppercase">
+                <span class="text-4xl font-bold font-[georgia] absolute -top-5 text-slate-300 z-[-10] drop-shadow-2xl">Teco-Farms</span>
+                <span class="font-medium text-3xl z-10 drop-shadow-2xl shadow-2xl">Solutions</span>
+              </h2>
+
+              <!-- Actual Solution -->
+
+              <!-- Swiper -->
+              <div class="swiper mySwiper mt-10">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide" id="diagnosing-weather-patterns">
+                    <div class="relative grid grid-cols-1 md:grid-cols-2 md:gap-x-4 place-contents-start place-items-start">
+                      <img src="./assets/agro.webp" alt="solution to agricultural problems" class="w-full object-contain">
+    
+                      <div class="bg-gray-800 text-center px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full h-[150vh] md:h-[120vh]">
+
+                        <div class="flex items-center justify-center space-x-4">
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                        </div>
+    
+                        <h3 class="my-3 text-base md:text-xl uppercase text-cyan-400">
+                          Diagnosing weather patterns
+                        </h3>
+                        <p class="my-3 text-gray-100 leading-relaxed tracking-wide font-light">
+                          Use data on previous patterns to predict weather patterns for farmers.
+                          <br> 
+                          Temperature, humidity, Air pressure, precipitation, wind direction and wind speed.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" id="testing-of-soil">
+                    <div class="w-full relative grid grid-cols-1 md:grid-cols-2 md:gap-x-4 place-contents-start place-items-start">
+                      <img src="./assets/drone.jpg" alt="solution to agricultural problems">
+    
+                      <div class="bg-gray-800 text-center px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full h-[150vh] md:h-[120vh]">
+    
+                        <div class="flex items-center justify-center space-x-4">
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                        </div>
+    
+                        <h3 class="my-3 text-base md:text-xl uppercase text-cyan-400">Testing Of Soil</h3>
+                        <p class="my-3 text-gray-100 leading-relaxed tracking-wide font-light">
+                          pH level, soil moisture, salinity, chemical content, structure and texture.
+                          <br>
+                          Checking the nutrient contents of the soil.
+                          <br>
+                          Based on this we will predict what to grow on that land for productivity for the farmers.
+                          <br>
+                          <em>Tools: monitoring devices, sensors, AI and IoT</em>
+                          <br>
+                          Drones can also be used for early soil analysis, useful for seed planting patterns.
+                          <br>
+                          We also suggest the type and quantity of fertilizers that can be used on the farm 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" id="crop-planting">
+                    <div class="w-full relative grid grid-cols-1 md:grid-cols-2 md:gap-x-4 place-contents-start place-items-start">
+                      <img src="./assets/gh-farmers.jpg" alt="solution to agricultural problems">
+    
+                      <div class="bg-gray-800 text-center px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full h-[150vh] md:h-[120vh]">
+    
+                        <div class="flex items-center justify-center space-x-4">
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                        </div>
+    
+                        <h3 class="my-3 text-base md:text-xl uppercase text-cyan-400">Crop Or Seed Planting</h3>
+                        <p class="my-3 text-gray-100 leading-relaxed tracking-wide font-light">
+                          Ways to ensure farmers plant
+                          <br> 
+                          For precision, the best ways for planting each type of crop.
+                          <br> 
+                          Spaces, depth, arrangement
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" id="irrigation">
+                    <div class="w-full relative grid grid-cols-1 md:grid-cols-2 md:gap-x-4 place-contents-start place-items-start">
+                      <img src="./assets/irri.jpg" alt="solution to agricultural problems">
+    
+                      <div class="bg-gray-800 text-center px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full h-[150vh] md:h-[120vh]">
+    
+                        <div class="flex items-center justify-center space-x-4">
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                        </div>
+    
+                        <h3 class="my-3 text-base md:text-xl uppercase text-cyan-400">
+                          Irrigation & Fertilizer Application Purposes
+                        </h3>
+    
+                        <p class="my-3 text-gray-100 leading-relaxed tracking-wide font-light">
+                          Types of irrigation: gravity, sprinkler and micro for efficiency and to save water
+                          <br>
+                          a. Sprinkler system: revolving nozzles are attached to pipelines, and water droplets are 
+                          sprayed or sprinkled across the landscape like raindrops.
+                          <br>
+                          - Helps plants to be protected from harsh conditions
+                          <br>
+                          - This system can be used to apply fertilizers and pesticides
+                          <br>
+                          Tools that can be used: Drones with AI can be used for this purpose
+                          <br>
+                          b. Drip system: water flows through pipelines buried in the ground and drips through small 
+                          holes (emitters) near plant roots.
+                          <br>
+                          - For plant health, direct watering of plant roots is necessary
+                          <br>
+                          - Conservation of water through soil moisture
+                          <br>
+                          Tools that can be used: software with AI to regulate water in pipelines
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" id="crop-health-assessment">
+                    <div class="w-full relative grid grid-cols-1 md:grid-cols-2 md:gap-x-4 place-contents-start place-items-start">
+                      <img src="./assets/drone.jpg" alt="solution to agricultural problems">
+    
+                      <div class="bg-gray-800 text-center px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full h-[150vh] md:h-[120vh]">
+    
+                        <div class="flex items-center justify-center space-x-4">
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                        </div>
+    
+                        <h3 class="my-3 text-base md:text-xl uppercase text-cyan-400">
+                          Monitoring Crops Or Health Assessment
+                        </h3>
+                        <p class="my-3 text-gray-100 leading-relaxed tracking-wide font-light">
+                          To check the conditions of crops and ensure each crop is not infected.
+                          <br> 
+                          Vast fields need such tools because of their size. 
+                          <br>
+                          To help assess crops’ health by scanning them.
+                          <br>
+                          Tools that can be used: Drones with sensors and AI
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" id="harvesting">
+                    <div class="w-full relative grid grid-cols-1 md:grid-cols-2 md:gap-x-4 place-contents-start place-items-start">
+                      <img src="./assets/agro.webp" alt="solution to agricultural problems">
+    
+                      <div class="bg-gray-800 text-center px-10 py-10 shadow-2xl drop-shadow-2xl rounded border-b-4 border-b-orange-600 w-full h-[150vh] md:h-[120vh]">
+    
+                        <div class="flex items-center justify-center space-x-4">
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                          <i class="bi bi-star-fill text-4xl text-orange-600"></i>
+                        </div>
+    
+                        <h3 class="my-3 text-base md:text-xl uppercase text-cyan-400">Harvesting</h3>
+                        <p class="my-3 text-gray-100 leading-relaxed tracking-wide font-light">
+                          Use data on previous patterns to predict weather patterns for farmers.
+                          <br> 
+                          Temperature, humidity, Air pressure, precipitation, wind direction and wind speed.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="text-orange-500 swiper-button-next"></div>
+                <div class="text-orange-500 swiper-button-prev"></div>
+              </div>
+            </section>
+            <!-- End Of Solutions Section -->
+
+        </main>
+    <!-- Main Content Ends Here  -->
+
+    <!-- Footer Starts Here -->
+    <footer class="bg-gray-900 py-10 text-white text-center relative z-20">
+        <p class="py-4 uppercase text-2xl">
+          Made with <span class="animate-ping duration-1000">❤️</span> Teco-Farms
+        </p>
+
+        <p class="py-3">
+          Copyright &copy; <span id="date" class="pr-1"></span>Teco-Farms
+        </p>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <!-- Scripts go here -->
+
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+     <script>
+      let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 80,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }
+      });
+    </script>
+
+    <script src="./index.js"></script>
+</body>
+</html>
