@@ -1255,8 +1255,9 @@ video {
   line-height: 2rem;
 }
 
-.text-\[13px\] {
-  font-size: 13px;
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-6xl {
@@ -1272,11 +1273,6 @@ video {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-medium {
@@ -1311,6 +1307,10 @@ video {
   line-height: 2;
 }
 
+.leading-loose {
+  line-height: 2;
+}
+
 .leading-relaxed {
   line-height: 1.625;
 }
@@ -1321,10 +1321,6 @@ video {
 
 .leading-\[2\.5\] {
   line-height: 2.5;
-}
-
-.leading-loose {
-  line-height: 2;
 }
 
 .leading-\[1\.7\] {
@@ -1624,11 +1620,6 @@ video {
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
     margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
-
-  .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1724,11 +1715,6 @@ video {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .md\:text-2xl {
